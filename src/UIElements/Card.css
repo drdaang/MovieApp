@@ -1,0 +1,39 @@
+.card-bg{
+    box-shadow:0 2px 6px rgba(0,0,0,0.26);
+    background:white;
+    overflow: hidden;
+    width:20vw;
+    height:60vh;
+    border-radius: 1%;
+    
+}
+li{
+    list-style:none;
+}
+.card-content{
+    padding:0.5rem;
+    text-align: center;
+}
+.card-title{
+    font-weight: bolder;
+    font-size:1.5rem;
+    
+    
+}
+.card-desc{
+    overflow-y: scroll;
+    font-size:1rem;
+    
+}
+.card-img{
+    width:100%;
+    height:65%;
+}
+img{
+    margin-top: 0;
+    object-fit:cover ;
+    width:100%;
+    height:100%;
+    padding:0;
+}
+
