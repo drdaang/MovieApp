@@ -9,25 +9,26 @@ import {
 } from 'react-router-dom';
 import Home from './MoviePage/Home';
 import CardList from './UIElements/CardList';
+import Auth from './MoviePage/Auth';
 
 const App = () => {
   return (
     
       <Router>
         <MainNavBar />
-        
         <Switch>
-
+          <main>
             <Route path="/" exact>
-              <div>hi</div>
             <Home />
-            
           </Route>
-          <Route path="/search" exact>
+          <Route path="/search">
             <div>hi2</div>
-          </Route>
+        </Route>
+        <Route path="/auth">
+            <Auth />
+        </Route>
             <Redirect to="/" />
-            
+            </main>    
         </Switch> 
       </Router>
   );

@@ -6,7 +6,7 @@ const NavLinks = (props) => {
         
         <ul className="nav-links">  
             <li><Link to="/search">SEARCH MOVIES</Link></li>
-            <li><Link to="/login">LOGIN</Link></li>
+            <li><Link to="/auth">AUTHENTICATE</Link></li>
         </ul>  
     );
 }

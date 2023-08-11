@@ -9,9 +9,10 @@
     width:100%;
     box-shadow:0 2px 6px rgba(0,0,0,0.26);
     color:white;
+    top:0;
 }
 main{
-    margin-bottom:5rem;
+    margin-top:5rem;
 }
 .movie-animation{
     width:5rem;
@@ -22,4 +23,8 @@ main{
     position: relative;
     display:flex;
     align-items:center;
+}
+.main-title:hover{
+    color:#e2f864;
+    text-shadow: 0 0 10px #e2f864, 0 0 20px #e2f864, 0 0 30px #e2f864;
 }

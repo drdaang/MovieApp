@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,cssProperties} from 'react';
 import Card from './Card';
 import './CardList.css';
+import Backdrop from './Backdrop';
+import HashLoader from 'react-spinners/HashLoader';
 
 
 const CardList = ({items}) => {
- 
 
-  // if (props.items.length === 0) {
-  //   return (<h1>Loading...</h1>);
-  // }
-  
-  // useEffect(() => {
-  //   console.log(props.items);
-  // })
   if (items.length === 0) {
-    return (<h1>Loading...</h1>);
+    return (
+      <React.Fragment>
+        <Backdrop />
+        <div className="loader">
+          <HashLoader size={120} color="#99aff6" />
+          <div className="loader-txt">Achieve Great in Style Mf</div>
+          </div>
+      </React.Fragment>
+    );
   }
   console.log(items);
     return (
@@ -25,8 +27,7 @@ const CardList = ({items}) => {
           id={item.id}
           Title={item.title}
           Poster={item.poster_path}
-              Plot={item.overview}
-          
+          Plot={item.overview}
             />
             </div>
         ))}
